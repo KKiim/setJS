@@ -17,6 +17,16 @@
 
     <script>
         // JavaScript function to display text in the output window
+        document.getElementById("textInput").value = `1 2 3 4 5
+1 2 3
+2 3 4
+3 4 5
+5 6 7
+6 7 8
+7 8 9
+2
+3
+4`
         function displayText() {
             const inputText = document.getElementById("textInput").value;
             const outputText = doStuff(inputText)
