@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate</title>
+    <script src="main.js" async></script>
+
+</head>
+<body>
+    <h1>Calculate</h1>
+
+    <!-- Text Input (Textarea) -->
+    <textarea id="textInput" rows="30" cols="25"></textarea>
+    <button onclick="displayText()">Submit</button>
+
+    <!-- Text Output Window -->
+    <textarea id="outputWindow" rows="30" cols="50" readonly></textarea>
+
+    <script>
+        // JavaScript function to display text in the output window
+        function displayText() {
+            const inputText = document.getElementById("textInput").value;
+            const outputText = doStuff(inputText)
+            const outputWindow = document.getElementById("outputWindow");
+            outputWindow.value = outputText;
+        }
+    </script>
+</body>
+</html>
